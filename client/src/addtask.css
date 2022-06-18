@@ -1,0 +1,115 @@
+.modal{
+    position:fixed;
+    left:0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.modal-content{
+    width: 50%;
+    background-color: #fff;
+    height: auto;
+    max-height: 50%;
+    overflow: auto;
+}
+
+.modal-header,.modal-footer{
+    padding:2%;
+    margin: 1%;
+}
+.modal-title{
+    margin: 0;
+    text-align: center;
+}
+.modal-footer{
+    text-align: right;
+}
+.modal-body{
+    padding: 2%;
+        /* border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee; */
+}
+.modal-close,.modal-save,.modal-delete{
+    margin: 1%;
+    padding: 1%;
+    background-color: burlywood;
+}
+#inputTitle{
+    width: 80%;
+    padding: 1% 0% 1% 0%;
+    border-style: none;
+    font-weight: bold;
+    font-size: large;
+    overflow: scroll;
+}
+.body-header{
+    display: flex;
+    justify-content: space-around;
+}
+.addSubTask{
+    padding: 1% 0% 1% 0%;
+    cursor: pointer;
+}
+.tooltip{
+    visibility: hidden;
+    position: absolute;
+    width: auto;
+    z-index: 1;
+    background-color:black;
+    opacity: 0.8;
+    color: white;
+    border-radius: 10%;
+    padding: 4px;
+    font-size: 90%;
+}
+.addSubTask:hover .tooltip{
+    visibility: visible;
+}
+.task-headings{
+    display: flex;
+    margin-top: 2%;
+    justify-content: space-around;
+}
+.sub-tasks{
+    text-align: left;
+}
+._subtask,._missed{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2%;
+}
+._missed {
+    display: flex;
+    background-color: red;
+    background-image: linear-gradient(red, rgb(241, 174, 174));
+    justify-content: space-around;
+    margin-top: 2%;
+}
+._sub{
+    width:40%;
+    padding: 1%;    
+    border-style: none;
+    font-size: medium;
+}
+._missed_sub {
+    background-color: red;
+    background-image: linear-gradient(red, rgb(241, 174, 174));
+    width: 40%;
+    padding: 1%;
+    border-style: none;
+    font-size: medium;
+}
+._missed_deadline {
+    border-style: none;
+    background-color: red;
+    background-image: linear-gradient(red, rgb(241, 174, 174));
+}
+._deadline{
+    border-style: none;
+}
